@@ -1,8 +1,9 @@
-h1 p body{
+h1,p,body{
     margin: 0;
 }
-p a{
+p,a{
     font-size: 20px;
+    /* flex-shrink: 0; */
 }
 header{
     margin-bottom: 20px;
@@ -17,15 +18,15 @@ main{
 }
 #parent{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 .contents{
     border: 3px solid rgb(238,204,204);
     flex-basis: 25%;
     padding: 10px 15px 10px 15px;
-    margin: 20px 20px;
+    margin: 20px 0px 20px 0px;
     text-align: center;
-    
+    flex-shrink: 0;
 }
 h2{
     font-size: 25px;
@@ -64,6 +65,6 @@ a:hover{
         font-size: 25px;
     }
     #parent{
-        display: block;
+        display: inline-block;
     }
 }
